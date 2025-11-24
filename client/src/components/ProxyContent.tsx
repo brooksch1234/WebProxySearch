@@ -29,23 +29,15 @@ export default function ProxyContent({
           
           {onExampleClick && (
             <div className="w-full">
-              <p className="text-sm text-muted-foreground mb-3">Quick start examples:</p>
+              <p className="text-sm text-muted-foreground mb-3">Quick start example:</p>
               <div className="flex flex-col gap-2">
                 <Button
                   variant="outline"
-                  onClick={() => onExampleClick("https://example.com")}
+                  onClick={() => onExampleClick("https://sites.google.com/students.wcpss.net/unblockedbw")}
                   className="font-mono text-xs"
                   data-testid="button-example-1"
                 >
-                  https://example.com
-                </Button>
-                <Button
-                  variant="outline"
-                  onClick={() => onExampleClick("https://ipv4.webshare.io")}
-                  className="font-mono text-xs"
-                  data-testid="button-example-2"
-                >
-                  https://ipv4.webshare.io
+                  https://sites.google.com/students.wcpss.net/unblockedbw
                 </Button>
               </div>
             </div>
