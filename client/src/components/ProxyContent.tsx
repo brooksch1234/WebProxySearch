@@ -26,7 +26,7 @@ export default function ProxyContent({
             <div className="absolute -inset-2 rounded-full bg-primary/20 blur-xl" />
           </div>
           <h1 className="text-2xl font-semibold mb-2 bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent">
-            Space Proxy Browser
+            Brooks's BW Proxy Browser
           </h1>
           <p className="text-muted-foreground mb-6">
             Launch into any website through secure proxy
