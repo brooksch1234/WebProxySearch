@@ -1,4 +1,4 @@
-import { Globe, AlertCircle } from "lucide-react";
+import { Rocket, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
@@ -21,10 +21,15 @@ export default function ProxyContent({
     return (
       <div className="flex h-full items-center justify-center p-6">
         <div className="flex max-w-md flex-col items-center text-center">
-          <Globe className="h-20 w-20 text-muted-foreground mb-6" />
-          <h1 className="text-2xl font-semibold mb-2">Web Proxy Browser</h1>
+          <div className="relative mb-6">
+            <Rocket className="h-20 w-20 text-primary" />
+            <div className="absolute -inset-2 rounded-full bg-primary/20 blur-xl" />
+          </div>
+          <h1 className="text-2xl font-semibold mb-2 bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent">
+            Space Proxy Browser
+          </h1>
           <p className="text-muted-foreground mb-6">
-            Enter any URL above to browse through secure proxy
+            Launch into any website through secure proxy
           </p>
           
           {onExampleClick && (

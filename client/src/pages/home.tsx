@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ProxyToolbar from "@/components/ProxyToolbar";
 import ProxyContent from "@/components/ProxyContent";
+import SpaceBackground from "@/components/SpaceBackground";
 
 type ContentStatus = "empty" | "loading" | "loaded" | "error";
 
@@ -67,6 +68,7 @@ export default function Home() {
 
   return (
     <div className="flex h-screen flex-col">
+      <SpaceBackground />
       <ProxyToolbar
         onNavigate={handleNavigate}
         onBack={handleBack}
@@ -77,7 +79,7 @@ export default function Home() {
         canGoForward={historyIndex < history.length - 1}
         currentUrl={currentUrl}
       />
-      <main className="flex-1 overflow-hidden">
+      <main className="relative flex-1 overflow-hidden">
         <ProxyContent
           status={status}
           url={currentUrl}
